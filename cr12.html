@@ -1,0 +1,98 @@
+<!--コンリテ#12 課題用ページ-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>HTMLの書き方について</title>
+    <link rel ="stylesheet" type="text/css" href="css\cr12style.css">
+    <style>
+        body,
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+        }
+        body {
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: none;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6em;
+            margin: 0;
+        }
+        a:link { color:cyan;}
+        a:visited { color:purple;}
+        a:hover { color:blue;}
+        a:active { color:red;}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <img src="img\HTML5icon.png" style="width: 100px; height: auto; float: left; margin: 10px 10px 10px 0px;">
+    <h1>HTMLの書き方について</h1>
+    <p><b>HTML</b>（HyperText Markup Language）は、ウェブページを作成するためのマークアップ言語です。</p>
+    <p>以下は、HTMLの基本的な書き方の例です。</p>
+    <hr>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>：HTML文書のバージョンを指定します。</li>
+        <li><code>&lt;html&gt;</code>：HTML文書のルート要素です。</li>
+        <li><code>&lt;head&gt;</code>：文書のメタデータを含むセクションです。</li>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code>：文書の文字エンコーディングを指定します。</li>
+        <li><code>&lt;title&gt;</code>：文書のタイトルを指定します。</li>
+        <li><code>&lt;body&gt;</code>：文書のコンテンツを含むセクションです。</li>
+        <li><code>&lt;h1&gt;</code>：見出しレベル1の見出しを定義します。</li>
+        <li><code>&lt;p&gt;</code>：段落を定義します。</li>
+        <li><code>&lt;ul&gt;</code>：順序なしリストを定義します。</li>
+        <li><code>&lt;li&gt;</code>：リストアイテムを定義します。</li>
+        <li><code>&lt;a href="URL"&gt;</code>：ハイパーリンクを定義します。</li>
+        <li><code>&lt;img src="URL" alt="説明"&gt;</code>：画像を表示します。</li>
+        <li><code>&lt;table&gt;</code>：表を定義します。</li>
+        <li><code>&lt;tr&gt;</code>：表の行を定義します。</li>
+        <li><code>&lt;th&gt;</code>：表の見出しセルを定義します。</li>
+        <li><code>&lt;td&gt;</code>：表のデータセルを定義します。</li>
+    </ul>
+    <hr>
+    <details open><summary>h1~h6の大きさ比較を以下に示します。</summary>
+    <h1>見出しレベル1</h1>
+    <h2>見出しレベル2</h2>
+    <h3>見出しレベル3</h3>
+    <h4>見出しレベル4</h4>
+    <h5>見出しレベル5</h5>
+    <h6>見出しレベル6</h6>
+    </details>
+    <p>HTMLで書いた表を以下に示します。なお、この表自体はスタイルシートで見た目を整えています。</p>
+    <table border="3">
+        <tr><th>名前</th><th>年齢</th><th>性別</th></tr>
+        <tr><td>田中</td><td>25</td><td>男</td></tr>
+        <tr><td>鈴木</td><td>30</td><td>女</td></tr>
+    </table>
+    <p>HTMLのより詳しい記述方法については
+        <a href="https://html.spec.whatwg.org/multipage/" target="_blank">このページ</a>
+    を参照するなどしてください。</p>
+</body>
+</html>
