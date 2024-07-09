@@ -4,16 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cr13</title>
-    <link rel="stylesheet" href="/css/cr13style copy.css">
+    <style>
+      html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.header {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  margin: 0;
+}
+header ul {
+    margin:0;
+    margin-left: -2.4em;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+  
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    background: #505050;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Yu Gothic UI';
+    line-height: 50px;
+    z-index: 11;
+    text-align: center;
+  width:25%;
+  height: 50px;
+  margin: 0 2px;
+}
+.wrapper {
+  width: 99vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  grid-template-areas: "a b";
+  grid-template-columns: 75% 25%;
+  grid-area: a;
+  margin-top: 60px;
+  padding-left: 5px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-right: 5px;
+  width: 75%;
+}
+.widget {
+  grid-area: b;
+  margin-top: 60px;
+  height: 280px;
+  margin-bottom: 0px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  width:25%;
+}
+.widget--sticky {
+  position: sticky;
+  top: 60px;
+}
+.footer {
+  position: sticky;
+  top: 100vh;
+  width: auto;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #f0f0f0;
+}
+a[target="_blank"]::after {
+  content: url(/img/jumpicon.png);
+  margin-left: 5px;
+}
+a:link { color:blue;}
+a:visited { color:purple;}
+a:hover { color:blueviolet;}
+a:active { color:red;}
+header li a:link { color:white;}
+header li a:visited { color:white;}
+header li a:hover { color:#e0e0e0;}
+header li a:active { color:black;}
+
+
+@media (max-width: 500px) {
+  .wrapper {
+    display: block;
+  }
+  .main{
+    grid-template-areas: "a" "b";
+    grid-template-columns: 100%;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-top: 60px;
+    width:100%;
+  }
+  .widget {
+    margin-top: 5px;
+    height: auto;
+    margin-bottom: 0px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width:100%;
+  }
+  .widget--sticky {
+    top: 0;
+  }
+}
+    </style>
 </head>
 <body>
 <div class="container">
   <header class="header">
     <ul>
-      <li><a href="/HTML/cr13/cr13_main.html">ホーム</a></li>
-      <li><a href="/HTML/cr13/cr13_urashima1.html">浦島太郎</a></li>
-      <li><a href="/HTML/cr13/cr13_food.html">食材</a></li>
-      <li><a href="/HTML/cr12.html">過去ページ</a></li>
+      <li><a href="cr13_main.html">ホーム</a></li>
+      <li><a href="cr13_urashima1.html">浦島太郎</a></li>
+      <li><a href="cr13_food.html">食材</a></li>
+      <li><a href="../cr12.html">過去ページ</a></li>
     </ul>
   </header>
   <div class="wrapper">
@@ -23,7 +139,7 @@
         <p>バナナは黄色くて甘く、栄養価も高いです。特にカリウムやビタミンCを豊富に含んでおり、健康に良いとされています。</p>
         <p>バナナは生食するだけでなく、スムージーやケーキ、パンなどの料理にも利用されます。</p>
         <p>また、バナナは手軽に持ち運びができるため、スポーツやアウトドアの際のエネルギー補給にも適しています。</p>
-        <a href="/HTML/cr13/cr13_food_fruit.html">戻る</a>
+        <a href="cr13_food_fruit.html">戻る</a>
     </main>
       <div class="widget">
         さいどばー
